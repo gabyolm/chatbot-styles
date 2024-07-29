@@ -1,0 +1,87 @@
+/* Style général du chatbot */
+.chatbot-container {
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* En-tête du chatbot */
+.chatbot-header {
+    background-color: #6a1b9a; /* Violet */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Zone de messages du chatbot */
+.chatbot-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+}
+
+/* Message de l'utilisateur */
+.chatbot-message.user {
+    background-color: #e3f2fd; /* Bleu clair */
+    color: #0d47a1; /* Bleu foncé */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    max-width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Message du chatbot */
+.chatbot-message.bot {
+    background-color: #b39ddb; /* Violet clair */
+    color: #4a148c; /* Violet foncé */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    max-width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Zone d'entrée de texte */
+.chatbot-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+    background-color: white;
+}
+
+/* Champ de saisie de texte */
+.chatbot-input input {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 0 0 0 10px;
+    outline: none;
+}
+
+/* Bouton d'envoi */
+.chatbot-input button {
+    background-color: #6a1b9a; /* Violet */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 0 0 10px 0;
+    transition: background-color 0.3s;
+}
+
+.chatbot-input button:hover {
+    background-color: #4a148c; /* Violet foncé */
+}
